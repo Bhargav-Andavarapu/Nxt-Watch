@@ -1,6 +1,6 @@
 import styled from 'styled-components/macro'
 
-export const HeaderContainer = styled.div`
+export const HeaderContainer = styled.nav`
   display: flex;
   flex-direction: row;
   justify-content: space-between;

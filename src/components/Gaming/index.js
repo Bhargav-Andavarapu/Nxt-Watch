@@ -85,7 +85,7 @@ class Gaming extends Component {
   }
 
   renderLoaderView = () => (
-    <LoaderContainer>
+    <LoaderContainer data-testid="loader">
       <Loader type="ThreeDots" color="#3b82f6" height="50" width="50" />
     </LoaderContainer>
   )

@@ -47,6 +47,10 @@ class Login extends Component {
     history.replace('/')
   }
 
+  onFailureLogin = errorMsg => {
+    this.setState({showErrorMsg: true, errorMsg})
+  }
+
   onSubmitLogin = async event => {
     event.preventDefault()
 
@@ -74,7 +78,9 @@ class Login extends Component {
       errorMsg,
       showPassword,
     } = this.state
+
     const jwtToken = Cookies.get('jwt_token')
+
     if (jwtToken !== undefined) {
       return <Redirect to="/" />
     }
@@ -92,7 +98,7 @@ class Login extends Component {
               >
                 <AppLogo
                   src="https://assets.ccbp.in/frontend/react-js/nxt-watch-logo-light-theme-img.png"
-                  alt="app-logo"
+                  alt="website logo"
                 />
                 <InputContainer>
                   <InputLabel htmlFor="username" isDarkTheme={isDarkTheme}>

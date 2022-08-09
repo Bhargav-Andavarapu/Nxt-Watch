@@ -91,6 +91,7 @@ export const LoginButton = styled.button`
   cursor: pointer;
   padding: 10px;
   margin-top: 10px;
+  margin-bottom: -5px;
 `
 
 export const ErrorMsg = styled.p`
@@ -98,5 +99,4 @@ export const ErrorMsg = styled.p`
   font-size: 12px;
   color: #ff0000;
   align-self: flex-start;
-  margin-top: 20px;
 `

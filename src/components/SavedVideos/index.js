@@ -56,7 +56,9 @@ const SavedVideos = () => (
                       src="https://assets.ccbp.in/frontend/react-js/nxt-watch-no-saved-videos-img.png"
                       alt="no saved videos"
                     />
-                    <Heading isDarkTheme={isDarkTheme}>No Saved Videos</Heading>
+                    <Heading isDarkTheme={isDarkTheme}>
+                      No saved videos found
+                    </Heading>
                     <NoVideoParagraph>
                       You can save your videos while watching them
                     </NoVideoParagraph>

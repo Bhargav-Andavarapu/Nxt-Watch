@@ -1,5 +1,7 @@
 import {Component} from 'react'
 
+import {Link} from 'react-router-dom'
+
 import {AiFillHome} from 'react-icons/ai'
 import {HiFire} from 'react-icons/hi'
 import {SiYoutubegaming} from 'react-icons/si'
@@ -37,7 +39,8 @@ class SideNavBar extends Component {
           return (
             <SideMenuDesktopContainer isDarkTheme={isDarkTheme}>
               <MenuNavContainer>
-                <LinkItem
+                <Link
+                  style={{textDecoration: 'none'}}
                   to="/"
                   onClick={() => onClickTab(activeIdConstants.home)}
                 >
@@ -59,7 +62,7 @@ class SideNavBar extends Component {
                       Home
                     </SectionHeading>
                   </MenuListContainer>
-                </LinkItem>
+                </Link>
                 <LinkItem
                   to="/trending"
                   onClick={() => onClickTab(activeIdConstants.trending)}

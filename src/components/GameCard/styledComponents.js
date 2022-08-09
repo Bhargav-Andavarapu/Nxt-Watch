@@ -26,7 +26,7 @@ export const GameImage = styled.img`
   }
 `
 
-export const Heading = styled.h1`
+export const Heading = styled.p`
   font-family: 'Roboto';
   font-size: 14px;
   margin-top: 20px;

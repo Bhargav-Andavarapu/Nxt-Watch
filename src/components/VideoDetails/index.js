@@ -145,7 +145,7 @@ class VideoDetails extends Component {
                     </VideoLikesAndSavedVideosContainer>
                   </VideoViewsAndLikesContainer>
                   <ChannelContainer>
-                    <ProfileImage src={profileImageUrl} alt={name} />
+                    <ProfileImage src={profileImageUrl} alt="channel logo" />
                     <ChannelNameAndSubscribersContainer>
                       <ChannelName isDarkTheme={isDarkTheme}>
                         {name}
